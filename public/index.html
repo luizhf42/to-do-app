@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do App</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header>
+      <h1 class="title">To-do App</h1>
+      <p class="date"></p>
+    </header>
+
+    <main>
+      <form>
+        <label for="add-todo" class="form-label">Add a To-do</label>
+        <input
+          type="text"
+          class="add-todo-input"
+          id="add-todo"
+          placeholder="e.g. Do the dishes"
+        />
+
+        <input
+          type="checkbox"
+          class="not-concluded-cb"
+          id="not-concluded"
+        /><label for="not-concluded">Not concluded</label>
+        <button class="add-todo-btn" aria-label="Confirm and add todo">Add +</button>
+      </form>
+
+      <section class="todos">
+        <h2 class="todo-title">To-do</h2>
+        <ul class="todo-list">
+          <p class="no-todos-msg">Nothing to-do.</p>
+        </ul>
+      </section>
+
+      <section class="done">
+        <h2 class="done-title">Done tasks</h2>
+        <ul class="done-list">
+          <p>Nothing is done.</p>
+        </ul>
+      </section>
+    </main>
+<footer>
+	<p>Made by <a href="https://github.com/luizhf42">Luiz Henrique &#x1F422;</a></p>
+</footer>
     <script src="bundle.js"></script>
-</body>
+  </body>
 </html>
