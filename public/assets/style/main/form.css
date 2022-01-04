@@ -1,0 +1,14 @@
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-todo {
+  width: 70%;
+}
+
+.add-todo-input {
+  width: 100%;
+}

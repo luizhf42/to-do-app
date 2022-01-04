@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --white: #fff;
+  --bg: #122143;
+  --blue: #074BEB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+  font-family: "Inter", "Montserrat", sans-serif;
+  min-height: 100vh;
+  background: var(--bg);
+  background: linear-gradient(135deg, var(--bg) 0%, #1b2d57 100%);
+}
