@@ -1,0 +1,36 @@
+.todos {
+  text-align: center;
+}
+
+.todo {
+  width: 100%;
+  background: #1c1d26;
+  display: flex;
+  align-items: center;
+  min-height: 35px;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.todo-btn {
+  height: 28px;
+  width: 28px;
+  justify-content: center;
+  display: inline-flex;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 0;
+  border-color: var(--delete-btn);
+}
+
+.todo-icon {
+  height: 100%;
+  width: auto;
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="public/assets/style/main/form/main.css" />
     <link rel="stylesheet" href="public/assets/style/main/form/checkbox.css" />
     <link rel="stylesheet" href="public/assets/style/main/form/button.css" />
+    <link rel="stylesheet" href="public/assets/style/main/todos/todos.css" />
 
     <title>To-do App</title>
   </head>
@@ -32,7 +33,12 @@
             <label for="concluded-cb" class="concluded-label"
               >Concluded
               <input type="checkbox" class="concluded-cb" id="concluded-cb" />
-              <div class="cb-indicator"><img class="checked-icon" src="public/assets/images/checked.svg"></div>
+              <div role="checkbox" class="cb-indicator">
+                <img
+                  class="checked-icon"
+                  src="public/assets/images/checked.svg"
+                />
+              </div>
             </label>
           </div>
           <button class="add-todo-btn" aria-label="Confirm and add todo">
@@ -44,6 +50,20 @@
       <section class="todos">
         <h2 class="todo-title">To-do</h2>
         <ul class="todo-list">
+          <li class="initial-todo todo">
+            <span role="button" class="done-btn todo-btn"><img
+              src="public/assets/images/checked.svg"
+              alt
+              class="done-icon todo-icon"
+          /></span>
+            <span class="todo-text">Create to-dos</span>
+            <span role="button" class="delete-btn todo-btn"
+              ><img
+                src="public/assets/images/trash-can.svg"
+                alt
+                class="delete-icon todo-icon"
+            /></span>
+          </li>
           <p class="no-todos-msg">Nothing to-do.</p>
         </ul>
       </section>
