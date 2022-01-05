@@ -3,7 +3,11 @@
 :root {
   --white: #fff;
   --bg: #122143;
-  --blue: #074BEB;
+  --bg2: #27468f;
+  --input: #8994a1;
+  --input-focus: #b0c0d1;
+
+  --todo-extras: #4c67ff;
 }
 
 * {

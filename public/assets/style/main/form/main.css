@@ -1,0 +1,32 @@
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-todo-input {
+  width: 90%;
+  border: 1px solid var(--input);
+  padding: 5px;
+  background: transparent;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.add-todo-input::placeholder {
+  color: var(--input);
+}
+
+.add-todo-input:focus {
+  outline: 1px solid var(--input-focus);
+}
+
+.todo-extras {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

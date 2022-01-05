@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="public/assets/style/base.css" />
     <link rel="stylesheet" href="public/assets/style/header.css" />
     <link rel="stylesheet" href="public/assets/style/main/main.css" />
-    <link rel="stylesheet" href="public/assets/style/main/form.css" />
+    <link rel="stylesheet" href="public/assets/style/main/form/main.css" />
+    <link rel="stylesheet" href="public/assets/style/main/form/checkbox.css" />
+    <link rel="stylesheet" href="public/assets/style/main/form/button.css" />
 
     <title>To-do App</title>
   </head>
@@ -18,26 +20,25 @@
 
     <main>
       <form>
-        <div class="add-todo">
-          <input
-            type="text"
-            class="add-todo-input"
-            id="add-todo"
-            placeholder="Add your to-do"
-          />
+        <input
+          type="text"
+          class="add-todo-input"
+          id="add-todo"
+          placeholder="Add your to-do"
+        />
 
-          <div class="not-concluded">
-            <input
-              type="checkbox"
-              class="not-concluded-cb"
-              id="not-concluded-cb"
-            />
-            <label for="not-concluded-cb" class="not-concluded-label">Not concluded</label>
+        <div class="todo-extras">
+          <div class="concluded">
+            <label for="concluded-cb" class="concluded-label"
+              >Concluded
+              <input type="checkbox" class="concluded-cb" id="concluded-cb" />
+              <div class="cb-indicator"><img class="checked-icon" src="public/assets/images/checked.svg"></div>
+            </label>
           </div>
+          <button class="add-todo-btn" aria-label="Confirm and add todo">
+            + Add
+          </button>
         </div>
-        <button class="add-todo-btn" aria-label="Confirm and add todo">
-          + Add
-        </button>
       </form>
 
       <section class="todos">

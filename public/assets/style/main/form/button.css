@@ -1,0 +1,20 @@
+.add-todo-btn {
+  background: var(--todo-extras);
+  border-radius: 28px;
+  border: 0;
+  box-shadow: 0px 0px 6px 0px #16213a;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.add-todo-btn:hover {
+  background-color: rgb(65, 82, 169);
+}
+.add-todo-btn:active {
+  position: relative;
+  top: 1px;
+}

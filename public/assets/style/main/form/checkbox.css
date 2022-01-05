@@ -1,0 +1,49 @@
+.concluded-label {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.9rem;
+}
+
+.concluded-cb {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.cb-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 17px;
+  width: 17px;
+  border: 1px solid var(--input);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  transition: .2s;
+}
+
+.cb-indicator:hover {
+  cursor: pointer;
+}
+
+.concluded-cb:checked ~ .cb-indicator {
+  background: var(--todo-extras);
+  border: 0;
+}
+
+.concluded-cb:not(checked) ~ .cb-indicator {
+  background: transparent;
+}
+
+.checked-icon {
+  width: 12px;
+}
+
+.concluded-cb:checked + .cb-indicator > .checked-icon {
+  visibility: visible;
+}
+
+.concluded-cb:not(checked) + .cb-indicator > .checked-icon {
+  visibility: hidden;
+}
