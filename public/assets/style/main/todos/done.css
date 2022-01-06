@@ -1,0 +1,8 @@
+.undo-btn {
+  border-color: var(--undo-btn)
+}
+
+.done-task {
+  text-decoration: line-through;
+  color: var(--done-task)
+}
