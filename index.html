@@ -23,7 +23,7 @@
       <form>
         <input
           type="text"
-          class="add-todo-input"
+          class="add-todo-input input"
           id="add-todo"
           placeholder="Add your to-do"
         />
@@ -51,12 +51,13 @@
         <h2 class="todo-title">To-do</h2>
         <ul class="todo-list">
           <li class="initial-todo todo">
-            <span role="button" class="done-btn todo-btn"><img
-              src="public/assets/images/checked.svg"
-              alt
-              class="done-icon todo-icon"
-          /></span>
-            <span class="todo-text">Create to-dos</span>
+            <span role="button" class="done-btn todo-btn"
+              ><img
+                src="public/assets/images/checked.svg"
+                alt
+                class="done-icon todo-icon"
+            /></span>
+            <span contenteditable class="todo-text input">Create to-dos</span>
             <span role="button" class="delete-btn todo-btn"
               ><img
                 src="public/assets/images/trash-can.svg"
@@ -64,15 +65,15 @@
                 class="delete-icon todo-icon"
             /></span>
           </li>
-          <p class="no-todos-msg">Nothing to-do.</p>
         </ul>
+        <p class="no-todos-msg">Nothing to-do.</p>
       </section>
 
       <section class="done">
         <h2 class="done-title">Done tasks</h2>
         <ul class="done-list">
-          <p>Nothing is done.</p>
         </ul>
+        <p>Nothing is done.</p>
       </section>
     </main>
     <footer>

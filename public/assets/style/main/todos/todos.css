@@ -1,16 +1,25 @@
-.todos {
+.todo-title {
   text-align: center;
+  font-size: 1.7rem;
+  margin: 1rem 0;
 }
 
 .todo {
+  margin-bottom: .5rem;
   width: 100%;
-  background: #1c1d26;
+  background: var(--todo-bg);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   min-height: 35px;
   padding: 10px;
   position: relative;
   border-radius: 10px;
+}
+
+.todo-text {
+  font-size: 0.95rem;
+  width: 80%;
 }
 
 .todo-btn {
@@ -21,16 +30,33 @@
   border: 1px solid;
   border-radius: 50%;
   padding: 5px;
-  margin-right: 10px;
+}
+
+.todo-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: .2s;
+}
+
+.done-btn {
+  border-color: var(--done-btn);
 }
 
 .delete-btn {
-  position: absolute;
-  right: 0;
   border-color: var(--delete-btn);
 }
 
 .todo-icon {
   height: 100%;
   width: auto;
+}
+
+.done-icon {
+  filter: invert(57%) sepia(48%) saturate(5971%) hue-rotate(89deg)
+    brightness(107%) contrast(119%);
+}
+
+.no-todos-msg {
+  display: none;
+  text-align: center;
 }

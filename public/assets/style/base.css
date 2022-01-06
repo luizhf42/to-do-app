@@ -8,6 +8,8 @@
   --input-focus: #b0c0d1;
   --todo-extras: #4c67ff;
   --delete-btn: #ff3300;
+  --done-btn: #00d300;
+  --todo-bg: #191921;
 }
 
 * {
@@ -22,4 +24,14 @@ body {
   min-height: 100vh;
   background: var(--bg);
   background: linear-gradient(135deg, var(--bg) 0%, #1b2d57 100%);
+}
+
+.input {
+  border-radius: 10px;
+  padding: 5px;
+  background: transparent;
+}
+
+.input:focus {
+  outline: 1px solid var(--input-focus);
 }

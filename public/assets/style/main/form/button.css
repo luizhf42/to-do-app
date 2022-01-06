@@ -9,11 +9,13 @@
   font-weight: bold;
   padding: 8px 18px;
   text-decoration: none;
-  transition: 0.3s;
 }
+
 .add-todo-btn:hover {
+  transition: 0.3s;
   background-color: rgb(65, 82, 169);
 }
+
 .add-todo-btn:active {
   position: relative;
   top: 1px;
