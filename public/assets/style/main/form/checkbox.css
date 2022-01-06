@@ -28,7 +28,7 @@
 }
 
 .concluded-cb:checked ~ .cb-indicator {
-  background: var(--todo-extras);
+  background: var(--cta);
   border: 0;
 }
 

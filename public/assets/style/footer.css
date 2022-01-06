@@ -1,0 +1,17 @@
+footer {
+  margin-top: 155px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.author {
+  text-decoration: none;
+  color: var(--cta);
+}
+
+.author:hover {
+  text-decoration: underline;
+}

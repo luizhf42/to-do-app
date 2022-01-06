@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+  .lists {
+    display: flex;
+    justify-content: space-between;
+width: 750px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .todos, .done {
+    width: 350px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+  }
+}

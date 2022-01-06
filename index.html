@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="public/assets/style/main/todos/base.css" />
     <link rel="stylesheet" href="public/assets/style/main/todos/todos.css" />
     <link rel="stylesheet" href="public/assets/style/main/todos/done.css" />
+    <link rel="stylesheet" href="public/assets/style/footer.css" />
+    <link rel="stylesheet" href="public/assets/style/responsive.css" />
 
     <title>To-do App</title>
   </head>
@@ -49,54 +51,55 @@
         </div>
       </form>
 
-      <section class="todos">
-        <h2 class="todo-title">To-do</h2>
-        <ul class="todo-list">
-          <li class="initial-todo task">
-            <span role="button" class="done-btn task-btn"
-              ><img
-                src="public/assets/images/checked.svg"
-                alt
-                class="done-icon task-icon"
-            /></span>
-            <span contenteditable class="task-text input">Create to-dos</span>
-            <span role="button" class="delete-btn task-btn"
-              ><img
-                src="public/assets/images/trash-can.svg"
-                alt
-                class="delete-icon task-icon"
-            /></span>
-          </li>
-        </ul>
-        <p class="empty-list-msg">Nothing to-do.</p>
-      </section>
-
-      <section class="done">
-        <h2 class="done-title">Done tasks</h2>
-        <ul class="done-list">
-          <li class="initial-done task">
-            <span role="button" class="undo-btn task-btn"
-              ><img
-                src="public/assets/images/undo.svg"
-                alt
-                class="undo-icon task-icon"
-            /></span>
-            <span contenteditable class="task-text input done-task">Access the To-do app</span>
-            <span role="button" class="delete-btn task-btn"
-              ><img
-                src="public/assets/images/trash-can.svg"
-                alt
-                class="delete-icon task-icon"
-            /></span>
-          </li>
-        </ul>
-        <p class="empty-list-msg">Nothing is done.</p>
-      </section>
+      <div class="lists">
+        <section class="todos">
+          <h2 class="todo-title">To-do</h2>
+          <ul class="todo-list">
+            <li class="initial-todo task">
+              <span role="button" class="done-btn task-btn"
+                ><img
+                  src="public/assets/images/checked.svg"
+                  alt
+                  class="done-icon task-icon"
+              /></span>
+              <span contenteditable class="task-text input">Create to-dos</span>
+              <span role="button" class="delete-btn task-btn"
+                ><img
+                  src="public/assets/images/trash-can.svg"
+                  alt
+                  class="delete-icon task-icon"
+              /></span>
+            </li>
+          </ul>
+          <p class="empty-list-msg">Nothing to-do.</p>
+        </section>
+        <section class="done">
+          <h2 class="done-title">Done tasks</h2>
+          <ul class="done-list">
+            <li class="initial-done task">
+              <span role="button" class="undo-btn task-btn"
+                ><img
+                  src="public/assets/images/undo.svg"
+                  alt
+                  class="undo-icon task-icon"
+              /></span>
+              <span contenteditable class="task-text input done-task">Access the To-do app</span>
+              <span role="button" class="delete-btn task-btn"
+                ><img
+                  src="public/assets/images/trash-can.svg"
+                  alt
+                  class="delete-icon task-icon"
+              /></span>
+            </li>
+          </ul>
+          <p class="empty-list-msg">Nothing is done.</p>
+        </section>
+      </div>
     </main>
     <footer>
       <p>
         Made by
-        <a href="https://github.com/luizhf42">Luiz Henrique &#x1F422;</a>
+        <a class="author" target="_blank" rel="noopener noreferrer" href="https://github.com/luizhf42">Luiz Henrique &#x1F422;</a>
       </p>
     </footer>
     <script src="public/bundle.js"></script>
