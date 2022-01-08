@@ -19,9 +19,22 @@ form {
   color: var(--input);
 }
 
+.empty-input, .empty-input:focus {
+  border: 2px solid var(--empty-input);
+  animation: shake .3s;
+}
+
 .todo-extras {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0px)}
+  25% { transform: translateX(-3px)}
+  50% { transform: translateX(3px) }
+  75% { transform: translateX(-3px) }
+  100% { transform: translateX(3px) }
 }
