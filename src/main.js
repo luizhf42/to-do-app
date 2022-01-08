@@ -15,6 +15,8 @@ addButton.addEventListener("click", function (event) {
 
     if (concludedCheckbox.checked) todo.createDoneTask();
     else todo.createTodo();
+
+    input.value = "";
   } else {
     input.classList.add("empty-input");
   }

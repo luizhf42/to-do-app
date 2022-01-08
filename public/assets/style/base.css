@@ -13,6 +13,7 @@
   --done-task: #ffffff72;
   --todo-bg: #191921;
   --empty-input: #d30000;
+  --task-shadow: 0 0 4px #0a1122a1;
 }
 
 * {
