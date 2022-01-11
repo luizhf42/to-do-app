@@ -2,7 +2,7 @@
   border-color: var(--undo-btn)
 }
 
-.done-task {
+.done-task-text {
   text-decoration: line-through;
   color: var(--done-task)
 }

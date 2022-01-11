@@ -1,18 +1,24 @@
 import { addTodos } from "./addTodos";
 import { addDoneTasks } from "./addDoneTasks";
-import { configureDeleting } from "./deleteTasks";
+import { deleteTask } from "./deleteTasks";
+import { configureMarkAsDone } from "./markTodoAsDone";
+import { configureUndoTask } from "./undoTask";
 
 class Todo {
-  createTodo() {
-    addTodos();
+  createTodo(text) {
+    addTodos(text);
   }
 
-  createDoneTask() {
-    addDoneTasks();
+  createDoneTask(text) {
+    addDoneTasks(text);
   }
 
-  deleteTask() {
-    configureDeleting();
+  configureMethods() {
+    deleteTask();
+
+    configureMarkAsDone();
+
+    configureUndoTask();
   }
 }
 

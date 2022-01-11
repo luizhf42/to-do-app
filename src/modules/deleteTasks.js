@@ -1,9 +1,4 @@
-// const getDeleteButtons = () => {
-//   const deleteButtons = document.querySelectorAll(".delete-btn");
-//   return deleteButtons;
-// };
-
-const configureDeleting = () => {
+const deleteTask = () => {
   const tasks = document.querySelectorAll(".task");
   for (let i = 0; i < tasks.length; i++) {
     tasks[i]
@@ -14,4 +9,4 @@ const configureDeleting = () => {
   }
 };
 
-export { configureDeleting };
+export { deleteTask };
