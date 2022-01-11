@@ -2,13 +2,36 @@
   .lists {
     display: flex;
     justify-content: space-between;
-width: 750px;
+    width: 750px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
+  
+  .list {
+    max-height: 375px;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
 
-  .todos, .done {
+  .list::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .list::-webkit-scrollbar-thumb {
+    background: #4c67ff;
+    border-radius: 5px;
+  }
+  .list::-webkit-scrollbar-thumb:hover {
+    background: #3244a8;
+  }
+  .list::-webkit-scrollbar-track {
+    background: #061538;
+    border-radius: 5px;
+  }
+
+  .todos,
+  .done {
     width: 350px;
   }
 
