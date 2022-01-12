@@ -4,7 +4,7 @@ import { deleteTask } from "./deleteTasks";
 import { configureMarkAsDone } from "./markTodoAsDone";
 import { configureUndoTask } from "./undoTask";
 import { checkIfListIsEmpty } from "./emptyListMsg";
-
+import { saveInLocalStorage } from "./saveInLocalStorage";
 
 class Todo {
   createTodo(text) {
@@ -23,6 +23,8 @@ class Todo {
     configureUndoTask();
 
     checkIfListIsEmpty();
+
+    saveInLocalStorage();
   }
 }
 
