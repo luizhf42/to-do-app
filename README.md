@@ -1,4 +1,4 @@
-# To-do App - ![](https://img.shields.io/github/license/luizhf42/to-do-app?style=for-the-badge)
+# To-do App  ![](https://img.shields.io/github/license/luizhf42/to-do-app?style=for-the-badge)
 A simple To-do App made with plain JavaScript.
 
 ## Table of contents
