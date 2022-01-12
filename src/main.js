@@ -28,7 +28,7 @@ addButton.addEventListener("click", function (event) {
 const lists = document.querySelectorAll("ul");
 const config = { attributes: true, childList: true };
 const callback = () => {
-  setTimeout(todo.configureMethods(), 500);
+  setTimeout(todo.configureMethods());
 };
 
 const observer = new MutationObserver(callback);

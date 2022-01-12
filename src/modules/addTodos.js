@@ -11,4 +11,4 @@ const addTodos = (text) => {
   newTodo.children[1].innerText = todoText;
 };
 
-export { addTodos, addButton };
+export { todoList, addTodos, addButton };

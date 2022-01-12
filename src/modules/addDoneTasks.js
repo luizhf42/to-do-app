@@ -11,4 +11,4 @@ const addDoneTasks = (text) => {
   newTodo.children[1].innerText = doneTaskText;
 };
 
-export { addDoneTasks, concludedCheckbox };
+export { doneTasksList, addDoneTasks, concludedCheckbox };
