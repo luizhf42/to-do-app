@@ -19,7 +19,7 @@ It's an app where users can add, edit, delete and mark tasks as to-do or done. A
 
 ### Screenshot
 
-![](.public/assets/images/screenshot.png)
+![](./public/assets/images/screenshot.png)
 
 ### Links
 
